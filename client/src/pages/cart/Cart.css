@@ -1,0 +1,143 @@
+.cart-wrapper{
+    padding: 20px;
+}
+
+.cart-title{
+    font-weight: 300;
+    text-align: center;
+}
+
+.cart-top{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cartTop-button {
+    padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cartToptext-container > span {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0px 10px; 
+}
+
+.cart-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-info {
+    flex: 3;
+}
+
+.cart-product{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart-productDetail{
+    flex: 2;
+    display: flex;
+}
+
+.cart-productDetail > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cart-details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.cart-productColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.cart-priceDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cart-productAmountContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-productAmount{
+    font-size: 24px;
+    margin: 5px;
+}
+
+.cart-productPrice{
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+.cart-summary{
+    flex: 1;
+    height: 50vh;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cart-summaryTitle{
+    font-weight: 300;
+}
+
+.cart-summaryItem {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartSummary-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+@media  (max-width: 730px){
+    .cart-wrapper{
+        padding: 10px;
+    }
+    .cartToptext-container{
+        display: none;
+    }
+    .cart-bottom{
+        flex-direction: column;
+    }
+    .cart-product{
+        flex-direction: column;
+    }
+    .cart-productAmount{
+        margin: 5px 15px;
+    }
+    .cart-productPrice{
+        margin-bottom: 20px;
+    }
+}
